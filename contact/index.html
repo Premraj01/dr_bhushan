@@ -88,12 +88,12 @@
                       "container-max": "1280px"
               },
               "fontFamily": {
-                      "headline-md": ["Noto Serif"],
-                      "headline-lg": ["Noto Serif"],
-                      "label-caps": ["Poppins"],
-                      "body-lg": ["Poppins"],
-                      "headline-xl": ["Noto Serif"],
-                      "body-md": ["Poppins"],
+                      "headline-md": ["Noto Serif", "serif"],
+                      "headline-lg": ["Noto Serif", "serif"],
+                      "label-caps": ["Poppins", "sans-serif"],
+                      "body-lg": ["Poppins", "sans-serif"],
+                      "headline-xl": ["Noto Serif", "serif"],
+                      "body-md": ["Poppins", "sans-serif"],
                       "sans": ["Poppins", "sans-serif"]
               },
               "fontSize": {
@@ -109,7 +109,7 @@
         }
     </script>
 </head>
-<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-primary">
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-fixed selection:text-primary">
 <!-- TopNavBar -->
 <nav class="bg-white/95 dark:bg-slate-950/95 backdrop-blur-md border-b border-slate-100 dark:border-slate-800 shadow-sm shadow-blue-900/5 docked full-width top-0 sticky z-50">
 <div class="flex justify-between items-center max-w-[1280px] mx-auto px-8 py-4 w-full">

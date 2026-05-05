@@ -75,13 +75,13 @@
                         "container-max": "1280px"
                     },
                     "fontFamily": {
-                        "headline-md": ["Noto Serif"],
-                        "headline-lg": ["Noto Serif"],
-                        "label-caps": ["Poppins"],
-                        "body-lg": ["Poppins"],
-                        "headline-xl": ["Noto Serif"],
-                        "body-md": ["Poppins"],
-                        "sans": ["Poppins", "system-ui", "sans-serif"]
+                        "headline-md": ["Noto Serif", "serif"],
+                        "headline-lg": ["Noto Serif", "serif"],
+                        "label-caps": ["Poppins", "sans-serif"],
+                        "body-lg": ["Poppins", "sans-serif"],
+                        "headline-xl": ["Noto Serif", "serif"],
+                        "body-md": ["Poppins", "sans-serif"],
+                        "sans": ["Poppins", "sans-serif"]
                     },
                     "fontSize": {
                         "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
@@ -98,11 +98,6 @@
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        body { 
-            background-color: #fbf9f8; 
-            color: #1b1c1c; 
-            font-family: 'Poppins', sans-serif;
         }
         .gradient-text { 
             background: linear-gradient(to right, #002045, #1a365d); 
@@ -123,7 +118,7 @@
         }
     </style>
 </head>
-<body class="antialiased font-sans text-body-md selection:bg-primary-fixed">
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-fixed">
 <!-- TopNavBar -->
 <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100 shadow-sm shadow-blue-900/5">
 <div class="flex justify-between items-center max-w-[1280px] mx-auto px-8 py-4 w-full">
