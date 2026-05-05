@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#1a365d",
+                    "primary-fixed": "#d6e3ff",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#86a0cd",
+                    "on-error-container": "#93000a",
+                    "on-background": "#1b1c1c",
+                    "tertiary-fixed-dim": "#c4c7ca",
+                    "outline": "#74777f",
+                    "on-tertiary-container": "#9c9fa2",
+                    "primary-fixed-dim": "#adc7f7",
+                    "on-primary-fixed-variant": "#2d476f",
+                    "on-primary": "#ffffff",
+                    "on-surface-variant": "#43474e",
+                    "secondary-fixed-dim": "#96ccfb",
+                    "on-secondary-fixed-variant": "#004b72",
+                    "on-secondary-container": "#185982",
+                    "tertiary": "#1d2124",
+                    "surface-container-high": "#eae8e7",
+                    "surface-container-highest": "#e4e2e1",
+                    "on-surface": "#1b1c1c",
+                    "on-tertiary-fixed": "#181c1f",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed-variant": "#44474a",
+                    "surface-container": "#f0eded",
+                    "inverse-on-surface": "#f3f0f0",
+                    "secondary-fixed": "#cce5ff",
+                    "surface-tint": "#455f88",
+                    "inverse-primary": "#adc7f7",
+                    "surface-container-low": "#f6f3f2",
+                    "on-secondary-fixed": "#001e31",
+                    "surface-variant": "#e4e2e1",
+                    "primary": "#002045",
+                    "tertiary-fixed": "#e0e3e6",
+                    "surface-bright": "#fbf9f8",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#dcd9d9",
+                    "outline-variant": "#c4c6cf",
+                    "surface": "#fbf9f8",
+                    "secondary": "#27638d",
+                    "tertiary-container": "#333639",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-container": "#99cffe",
+                    "background": "#fbf9f8",
+                    "error": "#ba1a1a",
+                    "on-tertiary": "#ffffff",
+                    "inverse-surface": "#303030",
+                    "on-primary-fixed": "#001b3c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem",
+                    "card": "16px"
+            },
+            "spacing": {
+                    "stack-sm": "8px",
+                    "stack-lg": "32px",
+                    "gutter": "24px",
+                    "section-gap": "80px",
+                    "margin": "32px",
+                    "stack-md": "16px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Noto Serif"],
+                    "headline-lg": ["Noto Serif"],
+                    "label-caps": ["Poppins"],
+                    "body-lg": ["Poppins"],
+                    "headline-xl": ["Noto Serif"],
+                    "body-md": ["Poppins"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-lg": ["36px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-layer {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(245, 247, FB, 0.5) 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased">
+<!-- TopNavBar -->
+<nav class="bg-white/95 dark:bg-slate-950/95 backdrop-blur-md docked full-width top-0 sticky z-50 border-b border-slate-100 dark:border-slate-800 shadow-sm shadow-blue-900/5">
+<div class="flex justify-between items-center max-w-[1280px] mx-auto px-8 py-4 w-full">
+<div class="text-2xl font-bold tracking-tight text-blue-950 dark:text-blue-100 font-serif"><img alt="Dr. Bhushan's Rejuvenation Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhUOiXPi8J2UmI5hNU0pc_EUUt6KAiaNYCcoqbvKsbtMbaso2v38DaiMzvfW_Dj51dKVBB945Zy2sY_eMt5AJEFFaqMbqdsYm51MnAl4KTzOLf58_4F0lVwL2I06pDsfgR1YK2e_uPYzCWbdE-D82A22p8hrIkLbZT-esT_ctp-TGhEd4YsukWP0DDvZfEKf4VVutKD4nyjy_K55dweMqzy3f6NHau6YbFlJmivAqYr-y9nmtj-iTKN-sRK29U3Fv8gZws9qQ2Vcw"/></div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-sans text-xs tracking-widest uppercase font-semibold text-slate-600 dark:text-slate-400 hover:text-blue-900 transition-colors" href="../home/index.html">Home</a>
+<a class="font-sans text-xs tracking-widest uppercase font-semibold text-blue-600 dark:text-blue-300 border-b-2 border-blue-600 pb-1" href="#">About</a>
+<div class="relative group"><button class="font-sans text-xs tracking-widest uppercase font-semibold text-slate-600 dark:text-slate-400 hover:text-blue-900 transition-colors flex items-center gap-1">Guide<svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div class="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white shadow-lg rounded-lg py-1 min-w-[180px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50 border border-slate-100"><a class="block px-4 py-2.5 text-xs text-slate-700 hover:bg-slate-50 hover:text-blue-900 tracking-widest uppercase font-semibold font-sans" href="../treatment-guide/index.html">Treatment Guide</a><a class="block px-4 py-2.5 text-xs text-slate-700 hover:bg-slate-50 hover:text-blue-900 tracking-widest uppercase font-semibold font-sans" href="../hair-graft-calculator/index.html">Graft Calculator</a></div></div>
+<a class="font-sans text-xs tracking-widest uppercase font-semibold text-slate-600 dark:text-slate-400 hover:text-blue-900 transition-colors" href="../contact/index.html">Contact</a>
+</div>
+<button class="bg-primary hover:bg-primary-container text-white px-6 py-2.5 rounded-[8px] text-sm font-medium transition-all duration-300 active:scale-95">
+            Book Consultation
+        </button>
+</div>
+</nav>
+<main class="max-w-[1280px] mx-auto px-8">
+<!-- Hero Section -->
+<section class="py-section-gap grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-stack-md">
+<span class="text-secondary font-label-caps tracking-[0.2em] uppercase">Clinical Excellence</span>
+<h1 class="font-headline-xl text-primary leading-tight">Defining the Science of Hair Restoration</h1>
+<p class="font-body-lg text-on-surface-variant max-w-xl">
+            Dr. Bhushan’s clinic stands at the intersection of medical rigor and aesthetic artistry. We believe that true restoration requires a deep understanding of biological precision and personalized care.
+        </p>
+<div class="pt-stack-md">
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined text-3xl">verified</span>
+<span class="font-headline-md italic">Dr. Bhushan, MD, FISHRS</span>
+</div>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute inset-0 bg-primary-container/5 rounded-card -rotate-2 group-hover:rotate-0 transition-transform duration-500"></div>
+<img class="relative z-10 w-full h-[500px] object-cover rounded-card shadow-md transition-transform duration-500 group-hover:scale-[1.01]" data-alt="A professional medical portrait of a distinguished doctor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFK0Lzt1dlT581Cwt8__mQ4BF13QzsZwHcn4OPw42pdH1xibLnWOThaaorhcb_1ckY5OHeUYahF9UzVzGtomr1B0_FAjlfM0prltcQGCjZF4qhpupASd3MJlf-rYSFX9uN4Pe3ku9BEISoz7nxXAHiEnNybdFa30A7SpKEXbcvC8YRtCQd-GlSAoRSMFaIzrwoDLq8qYy13YlTSw_Uw_dUWMiKjhAerk-j2ZXzHs061PgTq4R4VVUoyXl3i0iaQlb3kCj70gPCgUSM"/>
+</div>
+</section>
+<!-- Our Mission & Philosophy -->
+<section class="py-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-white p-8 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300 rounded-card space-y-stack-md">
+<span class="material-symbols-outlined text-secondary text-4xl">biotech</span>
+<h3 class="font-headline-md text-primary">Scientific Rigor</h3>
+<p class="text-on-surface-variant font-body-md">Every PRP treatment protocol is rooted in peer-reviewed clinical research and precise biological monitoring to ensure optimal follicular activation.</p>
+</div>
+<div class="bg-white p-8 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300 rounded-card space-y-stack-md">
+<span class="material-symbols-outlined text-secondary text-4xl">diversity_1</span>
+<h3 class="font-headline-md text-primary">Patient Integrity</h3>
+<p class="text-on-surface-variant font-body-md">We prioritize medical ethics over commercial gain. We only recommend PRP when the clinical data suggests a high probability of success for your unique hair profile.</p>
+</div>
+<div class="bg-white p-8 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300 rounded-card space-y-stack-md">
+<span class="material-symbols-outlined text-secondary text-4xl">architecture</span>
+<h3 class="font-headline-md text-primary">Aesthetic Precision</h3>
+<p class="text-on-surface-variant font-body-md">Restoration is more than growth; it is about natural patterns and density. Our approach respects the natural architectural flow of your hairline.</p>
+</div>
+</div>
+</section>
+<!-- Credentials & Expertise -->
+<section class="py-section-gap bg-surface-container-low -mx-8 px-8 rounded-card">
+<div class="max-w-[1000px] mx-auto text-center mb-16">
+<h2 class="font-headline-lg text-primary mb-stack-md">A Legacy of Clinical Achievement</h2>
+<p class="text-body-lg text-on-surface-variant">Dr. Bhushan has spent over two decades refining the application of Platelet-Rich Plasma for dermatological restoration.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+<div class="space-y-12">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-white font-bold">01</div>
+<div>
+<h4 class="font-headline-md text-primary mb-2">Education &amp; Fellowship</h4>
+<p class="text-on-surface-variant font-body-md">Graduated with top honors from the Institute of Medical Excellence, followed by a prestigious fellowship at the Global Hair Restoration Society.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-white font-bold">02</div>
+<div>
+<h4 class="font-headline-md text-primary mb-2">Published Research</h4>
+<p class="text-on-surface-variant font-body-md">Lead author on over 15 clinical trials investigating the efficacy of concentrated growth factors in androgenetic alopecia.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-white font-bold">03</div>
+<div>
+<h4 class="font-headline-md text-primary mb-2">Technological Innovation</h4>
+<p class="text-on-surface-variant font-body-md">Developer of the 'Bhushan Protocol'—a specialized triple-centrifugation process for maximum platelet concentration.</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white p-6 rounded-card border border-slate-200 shadow-sm text-center">
+<div class="text-3xl font-bold text-primary mb-1">15k+</div>
+<div class="font-label-caps text-secondary text-[10px]">Procedures</div>
+</div>
+<div class="bg-white p-6 rounded-card border border-slate-200 shadow-sm text-center">
+<div class="text-3xl font-bold text-primary mb-1">22</div>
+<div class="font-label-caps text-secondary text-[10px]">Years Exp.</div>
+</div>
+<div class="bg-white p-6 rounded-card border border-slate-200 shadow-sm text-center">
+<div class="text-3xl font-bold text-primary mb-1">98%</div>
+<div class="font-label-caps text-secondary text-[10px]">Success Rate</div>
+</div>
+<div class="bg-white p-6 rounded-card border border-slate-200 shadow-sm text-center">
+<div class="text-3xl font-bold text-primary mb-1">12</div>
+<div class="font-label-caps text-secondary text-[10px]">Global Awards</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Team Section -->
+<section class="py-section-gap">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<span class="text-secondary font-label-caps tracking-widest uppercase">The Clinical Team</span>
+<h2 class="font-headline-lg text-primary mt-2">Expert Care in Every Step</h2>
+</div>
+<p class="text-on-surface-variant max-w-md italic font-body-md">"Our team is united by a single goal: providing a sanctuary for restoration through medical excellence."</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Team Member 1 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-card aspect-[4/5] mb-6 shadow-sm">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105" data-alt="Portrait of Dr. Elena Vance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe32uYmtQdNdYsMozkJuN82hMOfFiadNKDbDjlp0rgSuFL9vbnwqhmep_bLsxtQ7ASeEidYCwnmvMSU5QDAaZPiEDK5YAAU_wSBLpInck2XyoNQES0Jom-g6oQmq_Sq82nPEdl_TmLusQbjSIBawMqboyRkwnEBdLNlpx9-f3u_d7-CQcbb-87uBjTgGEHiLBcLdvUF-uv-Na7MluOnC8_EcYNgx4srTWa5bybB9OTJncRhl5aU4SgMcCTdTnoJWRA85YHZB4frsJe"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<h4 class="font-headline-md text-primary">Dr. Elena Vance</h4>
+<p class="font-label-caps text-secondary mb-2 text-[10px]">Senior Trichologist</p>
+<p class="text-on-surface-variant text-sm font-body-md">Specializing in follicular scalp analysis and hormonal impact on hair density.</p>
+</div>
+<!-- Team Member 2 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-card aspect-[4/5] mb-6 shadow-sm">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105" data-alt="Portrait of Marcus Thorne" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbmMv8ZE3lKj_w3qFU5Y3bCdJ8iPtGnuy1czOTaLXRns_kUPLpb5jirDujODk-FTJi0pdrEQzkQXarbI2p8Cw7sdOy1pZrByc3bKtqensY87u-dUc7JzW8pgRM_RPTIdaBLC1li18Kzy6RjkXcBjE6BzZL0x466X0nVr0T46yI4ucwKTPtZi2wKBMS8U5hk1qJH8jdA1VOzqmSSMvV8LFut70zi4bYQ3Ue7IT38KYMqjxs0YZRTT-sR4QKIfcDtNymWzwO1_hloP4m"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<h4 class="font-headline-md text-primary">Marcus Thorne</h4>
+<p class="font-label-caps text-secondary mb-2 text-[10px]">Lead PRP Technician</p>
+<p class="text-on-surface-variant text-sm font-body-md">Expert in high-concentration platelet isolation and bioactive preparation protocols.</p>
+</div>
+<!-- Team Member 3 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-card aspect-[4/5] mb-6 shadow-sm">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105" data-alt="Portrait of Sarah Jennings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2a3f1qlDNcY0iq8KxE5mzQb_1p-wBfo9cT6T0FSTP6L0F3iSidHDUspF3DKUp05ySSd6262fM92jTwdgm-7vf_wwdVeQeJrDO9u_5gOwb8vgmF1uj-fs4luq_2PHBvaqylU0iw7nLKZiTyKjOV-21S5rFm3Hu7uBSjxT8-SQtfu72DnOlnQ3B7c5bI-w1t9whrMSyTM59EcW33WRhJrDzZWz4zDAJ0XK-LfBUDNfpj-mhoUqCrUfO_vnKJ6YGV8CF8ekTNdp91gxz"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<h4 class="font-headline-md text-primary">Sarah Jennings</h4>
+<p class="font-label-caps text-secondary mb-2 text-[10px]">Patient Care Coordinator</p>
+<p class="text-on-surface-variant text-sm font-body-md">Your primary point of contact for consultation scheduling and post-treatment guidance.</p>
+</div>
+</div>
+</section>
+<!-- Trust Bar / Affiliations -->
+<section class="py-12 border-y border-slate-100">
+<div class="flex flex-wrap justify-center items-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+<span class="font-bold text-xl tracking-tighter uppercase font-headline-md">ISHRS Accredited</span>
+<span class="font-bold text-xl tracking-tighter uppercase font-headline-md">Dermatology Guild</span>
+<span class="font-bold text-xl tracking-tighter uppercase font-headline-md">PRP Research Labs</span>
+<span class="font-bold text-xl tracking-tighter uppercase font-headline-md">Clinical Excellence 2023</span>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-900 w-full mt-20 border-t border-slate-200 dark:border-slate-800">
+<div class="max-w-[1280px] mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<span class="text-xl font-semibold text-blue-950 dark:text-blue-100 mb-4 block font-serif">Dr. Bhushan Hair Restoration Clinic</span>
+<p class="text-slate-500 dark:text-slate-400 font-body-md text-xs leading-relaxed max-w-sm mb-6">
+                A premier clinical destination dedicated to the science of Platelet-Rich Plasma hair restoration. Led by Dr. Bhushan, we provide medical excellence for discerning patients.
+            </p>
+<div class="flex gap-4">
+<a class="text-blue-900 dark:text-blue-300 hover:opacity-80 transition-opacity" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-blue-900 dark:text-blue-300 hover:opacity-80 transition-opacity" href="#"><span class="material-symbols-outlined">mail</span></a>
+<a class="text-blue-900 dark:text-blue-300 hover:opacity-80 transition-opacity" href="#"><span class="material-symbols-outlined">call</span></a>
+</div>
+</div>
+<div>
+<h4 class="text-blue-900 dark:text-blue-300 font-bold font-sans text-[10px] uppercase tracking-widest mb-6">Practice</h4>
+<ul class="space-y-4 font-sans text-xs text-slate-500">
+<li><a class="hover:text-blue-700 transition-colors" href="#">About Dr. Bhushan</a></li>
+<li><a class="hover:text-blue-700 transition-colors" href="#">The PRP Protocol</a></li>
+<li><a class="hover:text-blue-700 transition-colors" href="#">Results Gallery</a></li>
+<li><a class="hover:text-blue-700 transition-colors" href="#">Clinical Blog</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-blue-900 dark:text-blue-300 font-bold font-sans text-[10px] uppercase tracking-widest mb-6">Contact</h4>
+<address class="not-italic text-slate-500 dark:text-slate-400 font-sans text-xs space-y-4">
+<p>1200 Clinical Plaza, Suite 402<br/>Medical District, NY 10021</p>
+<p>consult@drbhushanprp.com</p>
+<p>+1 (212) 555-0198</p>
+</address>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto px-8 py-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="font-sans text-[10px] text-slate-400 uppercase tracking-wider">© 2024 Dr. Bhushan Hair Restoration Clinic. Clinical Excellence in PRP.</span>
+<div class="flex gap-6 font-sans text-[10px] text-slate-400 uppercase tracking-wider">
+<a class="hover:underline" href="#">Privacy Policy</a>
+<a class="hover:underline" href="#">Medical Disclaimer</a>
+<a class="hover:underline" href="#">Patient Terms</a>
+<a class="hover:underline" href="#">Ethics Code</a>
+</div>
+</div>
+</footer>
+</body></html>
