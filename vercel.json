@@ -1,12 +1,3 @@
 {
-  "rewrites": [
-    { "source": "/about", "destination": "/about/index.html" },
-    { "source": "/about/", "destination": "/about/index.html" },
-    { "source": "/contact", "destination": "/contact/index.html" },
-    { "source": "/contact/", "destination": "/contact/index.html" },
-    { "source": "/treatment-guide", "destination": "/treatment-guide/index.html" },
-    { "source": "/treatment-guide/", "destination": "/treatment-guide/index.html" },
-    { "source": "/hair-graft-calculator", "destination": "/hair-graft-calculator/index.html" },
-    { "source": "/hair-graft-calculator/", "destination": "/hair-graft-calculator/index.html" }
-  ]
+  "framework": "nextjs"
 }
